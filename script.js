@@ -1,4 +1,4 @@
-const notasAlunoDaVez = []
+let notasAlunoDaVez = []
 const quantasNotas = 2
 let media = 0
 
@@ -70,6 +70,8 @@ function criarTextoResultado(nomeAluno, quantasNotas){
 
 
 function entrarComAsNotas () {
+    notasAlunoDaVez = []
+    media = 0
     const nomeAluno = prompt("Por favor, digite o nome do aluno: ")
 
     const mediaDasNotas = perguntarNotas(quantasNotas)
